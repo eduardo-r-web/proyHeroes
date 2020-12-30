@@ -1,0 +1,12 @@
+<div class="col">
+    <div class="card h-100">
+        <img [src]="heroe.img" class="card-img-top" [alt]="heroe.nombre">
+        <div class="card-body">
+          <h5 class="card-title">{{heroe.nombre}}</h5>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">fecha de aparición: {{heroe.aparicion}}</small>
+        </div>
+        <a [routerLink]="[ '/heroe', heroe.id ]" class="btn btn-outline-primary">Ver más...</a>
+    </div>
+</div>

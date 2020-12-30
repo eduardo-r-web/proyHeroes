@@ -1,0 +1,10 @@
+<h2>Buscando: {{busqueda}}</h2>
+<hr>
+
+<div *ngIf="heroes.length == 0" class="alert alert-info" role="alert">
+  No se encontraron resultados que coincidan con la busqueda
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <app-heroe-tarjeta [heroe]="heroe" [indice]="heroe.id" *ngFor="let heroe of heroes"></app-heroe-tarjeta>
+</div>

@@ -1,0 +1,6 @@
+<h1>Héroes</h1>
+<hr>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <app-heroe-tarjeta [heroe]="heroe" [indice]="heroe.id" *ngFor="let heroe of heroes"></app-heroe-tarjeta>
+</div>
